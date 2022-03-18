@@ -1,0 +1,44 @@
+SELECT ENAME "EMPLOYEE NAME", SAL SALARY, COMM COMMISSION
+FROM EMP;
+
+
+SELECT 'hello my name is ' || ename as "concatenated value"
+FROM EMP
+WHERE job = 'MANAGER'
+
+SELECT concat("Hello, My Name is ",first_name," and I'm living in ",city) FROM customers;
+MYSQL
+
+
+-- ORDER BY 
+SELECT *
+FROM emp
+ORDER BY ENAME
+
+
+SELECT *
+FROM emp
+ORDER BY SAL
+
+
+-- ORDER BY descending order
+SELECT *
+FROM emp
+ORDER BY SAL DESC
+
+
+-- ORDER BY ascending order
+SELECT *
+FROM emp
+ORDER BY SAL ASC
+
+
+SELECT DEPTNO, SAL, ENAME
+FROM EMP
+ORDER BY DEPTNO, SAL
+
+
+SELECT *
+FROM EMP
+ORDER BY DEPTNO, SAL
+
